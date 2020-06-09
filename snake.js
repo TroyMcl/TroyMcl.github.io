@@ -13,9 +13,11 @@ class Snake {
     if (this.snakeBody.length > this.score) {
       this.doubleback = this.snakeBody.pop();
     }
+
     for(let i = 0; i < this.snakeBody.length; i++) {
       ctx.fillRect(this.snakeBody[i].x, this.snakeBody[i].y, scale, scale);
     }
+    
     ctx.fillStyle = '#18f550';
     ctx.fillRect(this.x , this.y, scale, scale);
 
